@@ -37,9 +37,6 @@
     border-radius: 5px;
     object-fit: cover;
 }
-#photo {
-    object-fit: cover;
-}
 .instruction{
   display: block;
   text-align:center;
