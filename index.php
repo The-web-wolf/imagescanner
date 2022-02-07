@@ -1,3 +1,11 @@
+<?php 
+  if(isset($_POST['submit'])){
+    $image = $_FILES['image']['name'];
+    $image_temp = $_FILES['image']['tmp_name'];
+    print_r($_FILES);
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
-  <script src="capture.js"></script>
+  <script src="capture.js" async></script>
 </head>
 <body>
-  <p class="instruction">
-    Focus the camera on the  left and right borders of your card and capture, recapture until you are satisfied with the result then submit
-  </p>
+
   <div class="contentarea">
+    <p class="instruction">
+      Focus the card on the borders of the camera, recapture until you are satisfied with the result then submit
+    </p>
     <div class="camera">
       <video id="video">Video stream not available.</video>
       <button id="startbutton">Capture</button> 
@@ -23,5 +32,10 @@
       <img id="photo"  alt="The screen capture will appear in this box."> 
     </div>
   </div>
+
+  <form enctype="multipart/form-data" action="#" method="post" >
+    <input type="hidden" name="image" id="image" value="">
+    <input type="submit" value="Submit" >
+  </form>
 </body>
 </html>
