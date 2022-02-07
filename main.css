@@ -1,29 +1,6 @@
-#video {
-  border: 1px solid black;
-  box-shadow: 2px 2px 3px black;
-  width:320px;
-  height:240px;
-}
-
-#photo {
-  border: 1px solid black;
-  box-shadow: 2px 2px 3px black;
-  width:320px;
-  height:240px;
-}
 
 #canvas {
   display:none;
-}
-
-.camera {
-  width: 340px;
-  display:inline-block;
-}
-
-.output {
-  width: 340px;
-  display:inline-block;
 }
 
 #startbutton {
@@ -40,8 +17,21 @@
   color: rgba(255, 255, 255, 1.0);
 }
 
-.contentarea {
-  font-size: 16px;
-  font-family: "Lucida Grande", "Arial", sans-serif;
-  width: 760px;
+.contentarea{
+  width: 100%;
+  height: 100%;  
+}
+
+.camera,.output{
+  border: 1px solid red;
+  width:calc(100vw - 20px);
+  max-width: 480px;
+  margin: 0 auto;
+  height:240px;
+  margin-bottom:20px;
+}
+
+.camera #video, .output #photo{
+  width:100%;
+  height:100%;
 }
