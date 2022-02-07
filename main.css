@@ -37,13 +37,8 @@
 #photo {
     object-fit: cover;
 }
-
-.landscape {
-    display: block;
-    text-align: center;
-}
-@media screen and (orientation: landscape) {
-    .landscape {
-        display: none;
-    }
+.instruction{
+  display: block;
+  text-align:center;
+  color: lightblue
 }
