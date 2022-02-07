@@ -1,8 +1,6 @@
 
 #canvas {
   display:none;
-  width:calc(100vw -20px) !important;
-  height:240px !important;
 }
 
 #startbutton {
@@ -28,7 +26,7 @@
   width:calc(100vw - 20px);
   max-width: 480px;
   margin: 0 auto;
-  height:240px;
+  height:400px;
   margin-bottom:20px;
 }
 

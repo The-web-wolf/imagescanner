@@ -37,9 +37,9 @@
                   max: 1280,
                 },
                 height: {
-                  min: 360,
-                  ideal: 720,
-                  max: 1080,
+                  min: 720,
+                  ideal: 1024,
+                  max: 1280,
                 },
 
               },
