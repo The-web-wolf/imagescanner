@@ -30,10 +30,10 @@
 }
 
 .camera{
-  height:320px;
+  height:460px;
 }
 .output{
-  height:320px;
+  height:100px;
 }
 
 .camera #video, .output #photo{
