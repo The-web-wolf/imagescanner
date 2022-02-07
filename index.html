@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image capture</title>
-  <script src="https://demo.idcapture.es/js/bidcapture-1.0.6.3-rc.min.js" data-container="container" data-callback="initIdCapture" defer></script>
+  <script src="https://idcapture.es/idcapture-latest.js" data-container="container" data-callback="initIdCapture" defer></script>
 </head>
 <body>
   <div id="container">
@@ -13,6 +13,7 @@
   </div>
   <script>
     window.initIdCapture = function(Bidcapture){
+      console.log(Bidcapture)
       Bidcapture.setSize(480, 360);
       Bidcapture.onConnect = function(){
         Bidcapture.setMode('REVDNI')
