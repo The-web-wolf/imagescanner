@@ -3,7 +3,7 @@
     // width to the value defined here, but the height will be
     // calculated based on the aspect ratio of the input stream.
 
-    var width = 460; // We will scale the photo width to this
+    var width = 1280; // We will scale the photo width to this
     var height = 0; // This will be computed based on the input stream
 
     // |streaming| indicates whether or not we're currently streaming
@@ -33,13 +33,13 @@
                 },
                 width: {
                   min: 720,
-                  ideal: 1024,
-                  max: 1280,
+                  ideal: 1280,
+                  max: 1920,
                 },
                 height: {
                   min: 720,
-                  ideal: 1024,
-                  max: 1280,
+                  ideal: 1280,
+                  max: 1920,
                 },
 
               },
@@ -65,6 +65,8 @@
                     if (isNaN(height)) {
                         height = width / (4 / 3);
                     }
+
+                    alert(width)
 
                     video.setAttribute("width", width);
                     video.setAttribute("height", height);
