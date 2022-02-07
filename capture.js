@@ -29,8 +29,19 @@
             .getUserMedia({ 
               video: {
                 facingMode:{
-                  ideal: "environment"
-                }
+                  exact: "environment",
+                },
+                width: {
+                  min: 720,
+                  ideal: 1024,
+                  max: 1280,
+                },
+                height: {
+                  min: 360,
+                  ideal: 720,
+                  max: 1080,
+                },
+
               },
               audio: false, 
             })
