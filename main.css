@@ -27,7 +27,7 @@
   max-width: 480px;
   margin: 0 auto;
   margin-bottom:20px;
-  height:320px;
+  height:350px;
   overflow-y: hidden;
 }
 
@@ -37,5 +37,7 @@
 }
 
 #photo{
+  width:100%;
+  height:350px;
   object-fit: fill;
 }
