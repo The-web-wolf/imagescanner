@@ -23,7 +23,6 @@
 }
 
 .camera,.output{
-  border: 1px solid red;
   width:calc(100vw - 20px);
   max-width: 480px;
   margin: 0 auto;
@@ -37,4 +36,12 @@
 }
 #photo{
   object-fit: cover;
+  transform: rotateX(-90deg);
+  transform-origin: top left;
+  width:calc(100vw - 20px) !important;
+  height:auto;
+
+}
+.output{
+  overflow: hidden;
 }
