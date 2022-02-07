@@ -26,8 +26,14 @@
   width:calc(100vw - 20px);
   max-width: 480px;
   margin: 0 auto;
-  height:400px;
   margin-bottom:20px;
+}
+
+.camera{
+  height:320px;
+}
+.output{
+  height:320px;
 }
 
 .camera #video, .output #photo{
