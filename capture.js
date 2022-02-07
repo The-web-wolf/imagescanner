@@ -66,8 +66,6 @@
                         height = width / (4 / 3);
                     }
 
-                    alert(width)
-
                     video.setAttribute("width", width);
                     video.setAttribute("height", height);
                     canvas.setAttribute("width", width);
