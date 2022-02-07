@@ -1,33 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image capture</title>
-  <script src="https://idcapture.es/idcapture-latest.js" data-container="container" data-callback="initIdCapture" defer></script>
+	<title>WebRTC: Still photo capture demo</title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="main.css" type="text/css" media="all">
+	<script src="capture.js">
+	</script>
 </head>
 <body>
-  <div id="container">
-
+<div class="contentarea">
+	<h1>
+		MDN - WebRTC: Still photo capture demo
+	</h1>
+	<p>
+		This example demonstrates how to set up a media stream using your built-in webcam, fetch an image from that stream, and create a PNG using that image.
+	</p>
+  <div class="camera">
+    <video id="video">Video stream not available.</video>
+    <button id="startbutton">Take photo</button> 
   </div>
-  <script>
-    window.initIdCapture = function(Bidcapture){
-      console.log(Bidcapture)
-      Bidcapture.setSize(480, 360);
-      Bidcapture.onConnect = function(){
-        Bidcapture.setMode('REVDNI')
-        Bidcapture.enable();
-      };
-
-      Bidcapture.onImage = function(image){
-        console.log(image);
-      };
-
-      Bidcapture.onMrzData = function(data){
-        console.log(data);
-      };
-    }
-  </script>
+  <canvas id="canvas">
+  </canvas>
+  <div class="output">
+    <img id="photo" alt="The screen capture will appear in this box."> 
+  </div>
+	<p>
+		Visit our article <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos"> Taking still photos with WebRTC</a> to learn more about the technologies used here.
+	</p>
+</div>
 </body>
 </html>
