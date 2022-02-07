@@ -28,11 +28,13 @@
     margin: 0 auto;
     height: 240px;
     margin-bottom: 20px;
+    position: relative
 }
 .camera #video,
 .output #photo {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 #photo {
     object-fit: cover;
@@ -43,15 +45,15 @@
   color: lightblue
 }
 
-#video::before{
+.camera::before{
   /* create a rectagle to help card capture */
   content: "";
   display: block;
   position: absolute;
   top:50%;
   left:50%;
-  width:320px;
-  height:240px;
+  width:100%;
+  height:245px;
   border:1px dashed #ccc;
   border-radius:5px;
   transform:translate(-50%,-50%);
