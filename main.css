@@ -29,6 +29,8 @@
   margin: 0 auto;
   height:240px;
   margin-bottom:20px;
+}
+.output img{
   transform: rotate(-90deg);
 }
 
