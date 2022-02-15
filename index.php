@@ -1,8 +1,9 @@
 <?php 
-  if(isset($_FILES['image']['name'])){
+  if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $image = $_FILES['image']['name'];
     $image_temp = $_FILES['image']['tmp_name'];
     print_r($_FILES);
+    print_r($_POST);
   }
   else{
     echo "Please select an image";
@@ -37,7 +38,7 @@
   </div>
 
   <form enctype="multipart/form-data" action="#" method="post" >
-    <input type="file" name="image" id="image">
+    <input type="hidden" name="image" id="image">
     <input type="submit" value="Submit" name="submit" >
   </form>
 </body>
