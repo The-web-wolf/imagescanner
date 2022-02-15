@@ -60,8 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   // IF ALL IS WELL, you can save this to the database
   echo $image_destination;
-} else {
-  echo "Please select an image";
 }
 ?>
 
