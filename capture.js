@@ -148,8 +148,9 @@
       var data = canvas.toDataURL("image/png");
       // this displays the image
       photo.setAttribute("src", data);
-      // this adds the image to the form
+      // add image to form type=file value=data
       document.getElementById("image").value = data;
+      alert(data)
     } else {
       clearphoto();
     }
