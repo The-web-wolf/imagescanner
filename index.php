@@ -37,7 +37,7 @@
   </div>
 
   <form enctype="multipart/form-data" action="#" method="post" >
-    <input type="hidden" name="image" id="image" value="">
+    <input type="file" name="image" id="image">
     <input type="submit" value="Submit" name="submit" >
   </form>
 </body>
