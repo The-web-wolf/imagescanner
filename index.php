@@ -24,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($image_size <= 1000000) {
           $image_destination = 'uploads/' . uniqid('', true) . '.' . $image_ext;
           move_uploaded_file($image_temp, $image_destination);
-          echo '<img src="' . $image_destination . '" alt="">';
         } else {
           echo 'File is too big';
         }
@@ -60,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   // IF ALL IS WELL, you can save this to the database
   echo $image_destination;
+  echo '<img src="' . $image_destination . '" alt="">';
 }
 ?>
 
